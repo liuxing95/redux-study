@@ -108,7 +108,7 @@ export default function combineReducers(reducers: ReducersMapObject) {
     const nextState: StateFromReducersMapObject<typeof reducers> = {}
     for (let i = 0; i < finalReducerKeys.length; i++) {
       const key = finalReducerKeys[i]
-      const reducer = finalReducers[i]
+      const reducer = finalReducers[key]
       const previousStateForKey = state[key]
       const nextStateForKey = reducer(previousStateForKey, action)
       if (typeof nextStateForKey === 'undefined') {

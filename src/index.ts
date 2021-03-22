@@ -1,4 +1,5 @@
 import createStore from './createStore'
+import combineReducers from './combineReducers'
 
 
 // types
@@ -31,5 +32,6 @@ export {
 export { Action, AnyAction } from './types/actions'
 
 export {
-  createStore
+  createStore,
+  combineReducers
 }
