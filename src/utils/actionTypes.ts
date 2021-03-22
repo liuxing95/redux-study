@@ -7,3 +7,5 @@ const ActionTypes = {
   REPLACE: `@@redux/REPLACE${/* #__PURE__ */ randomString()}`,
   PROBE_UNKNOWN_ACTION: () => `@@redux/PROBE_UNKNOWN_ACTION${randomString()}`
 }
+
+export default ActionTypes

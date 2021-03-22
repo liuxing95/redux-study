@@ -10,6 +10,7 @@ import {
 import { Action } from './types/actions'
 import { Reducer } from './types/reducers'
 import isPlainObject from './utils/isPlainObject'
+import ActionTypes from './utils/actionTypes'
 
 // 定义多个 createStore
 export default function createStore<

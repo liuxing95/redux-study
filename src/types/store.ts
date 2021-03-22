@@ -26,6 +26,12 @@ export type PreloadedState<S> = Required<S> extends {
 export interface Dispatch<A extends Action = AnyAction> {
   <T extends A>(action: T, ...extraArgs: any[]): T
 }
+
+export interface Unsubscribe {
+  (): void
+}
+
+
 // Store
 export interface Store<
   S = any,
@@ -37,11 +43,11 @@ export interface Store<
 
   getState(): S
 
-  // subscribe(listener: () => void): Unsubscribe
+  subscribe(listener: () => void): Unsubscribe
 
-  // replaceReducer<NewState, NewActions extends Action>(
-  //   nextReducer: Reducer<NewState, NewActions>
-  // ): Store<ExtendState<NewState, StateExt>, NewActions, StateExt, Ext> & Ext
+  replaceReducer<NewState, NewActions extends Action>(
+    nextReducer: Reducer<NewState, NewActions>
+  ): Store<ExtendState<NewState, StateExt>, NewActions, StateExt, Ext> & Ext
 
   // [Symbol.observable](): Observable<S>
 
