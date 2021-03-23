@@ -55,5 +55,10 @@ export default function applyMiddleware(
 
     const chain = middlewares.map(middleware => middleware(middlewareAPI))
     dispatch = compose<typeof dispatch>(...chain)(store.dispatch)
+
+    return {
+      ...store,
+      dispatch
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "redux-study",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/liuxing95/redux-study.git"
   },
-  "author": "",
+  "author": "liuxing",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/liuxing95/redux-study/issues"

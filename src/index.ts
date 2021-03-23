@@ -1,5 +1,6 @@
 import createStore from './createStore'
 import combineReducers from './combineReducers'
+import applyMiddleware from './applyMiddleware'
 
 
 // types
@@ -28,10 +29,17 @@ export {
   // ActionFromReducersMapObject
 } from './types/reducers'
 
+//middleware
+export {
+  Middleware,
+  MiddlewareAPI
+} from './types/middleware'
+
 // actions
 export { Action, AnyAction } from './types/actions'
 
 export {
   createStore,
-  combineReducers
+  combineReducers,
+  applyMiddleware
 }
