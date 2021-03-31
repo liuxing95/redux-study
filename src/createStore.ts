@@ -1,4 +1,4 @@
-import $$observable from './utils/symbol-observable'
+// import $$observable from './utils/symbol-observable'
 import {
   Store,
   PreloadedState,
